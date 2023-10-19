@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+
+body{
+    overflow: hidden;
+}
+
+header{
+    display: flex;
+    width: 100%;
+    // border: 2px solid red;
+    padding: 5px 50px;
+    // justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+
+    .navigation{
+        ul{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            list-style: none;
+            a{
+                text-decoration: none;
+                color: rgb(87, 87, 87);
+                font-weight: 400;
+            }
+        }
+
+        //Active
+
+
+        ul li.active{
+            background: green;
+            border-radius: 15px;
+            padding: 5px 10px;
+
+            a{
+                color: white;
+            }
+        }
+    }
+
+}
+
+main{
+    section{
+
+    position: relative;
+        
+    // background: url("/images/fondo.png") center/cover no-repeat;
+    text-align: center;
+    color: black;
+    height: 100vh;
+    padding: 50px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .text{
+        // position: absolute;
+        // top: 40%;
+        font-size: 60px;
+        display: flex;
+        flex-direction: column;
+        width: 600px;
+        text-align: left;
+
+        h1{
+            color: rgb(2, 133, 2);
+            // background: black;
+        }
+
+        .subtitle{
+            font-size: 20px;
+        }
+        .button{
+            a{
+                font-size: 25px;
+                background: rgb(2, 133, 2);
+                color: white;
+                text-decoration: none;
+                border-radius: 15px;
+                padding: 5px 10px;
+                transition: 0.2s ease;
+            }
+            &:hover{
+                letter-spacing: 5px;
+                transition: 0.2s ease;
+            }
+        }
+     }
+
+     
+
+     .decorator{
+        width: 900px;
+        border-radius: 50%;
+        height: 900px;
+        background: rgb(2, 133, 2);
+        position: absolute;
+        bottom: -200px;
+        right: -200px;
+        z-index: -1;
+     }
+
+     .img{
+        position: relative;
+
+        .socials{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            position: absolute;
+            top: 30%;
+            right: -170px;
+            gap: 20px;
+            color: white;
+        }
+     }
+
+    }
+}
